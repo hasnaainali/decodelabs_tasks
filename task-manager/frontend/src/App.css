@@ -1,0 +1,8 @@
+.App {
+  min-height: 100vh;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.2s ease;
+}

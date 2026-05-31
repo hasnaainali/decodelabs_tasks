@@ -1,0 +1,83 @@
+# ====================
+# DEPENDENCIES
+# ====================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ====================
+# ENVIRONMENT FILES
+# ====================
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# ====================
+# BUILD FILES
+# ====================
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# ====================
+# IDE FILES
+# ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ====================
+# LOGS
+# ====================
+logs/
+*.log
+*.log.*
+
+# ====================
+# OS FILES
+# ====================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.bak
+
+# ====================
+# BACKUP FILES
+# ====================
+*.bak
+*.tmp
+*.temp
+*.cache
+
+# ====================
+# TEST FILES
+# ====================
+coverage/
+.nyc_output/
+*.test.js
+*.spec.js
+
+# ====================
+# MISCELLANEOUS
+# ====================
+*.pid
+*.seed
+*.pid.lock
+.direnv/
+.cache/
+.parcel-cache/

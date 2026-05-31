@@ -10,8 +10,6 @@
 
 **BizDash** is a modern, fully responsive business dashboard interface built with **pure HTML5, CSS3, and vanilla JavaScript**. It provides a complete admin panel experience with dynamic content management, analytics visualization, customer tracking, project management, and a contact system — all with a beautiful teal/navy gradient color scheme.
 
-🔗 **Live Demo:** [View Demo](https://your-username.github.io/BizDash-Responsive-Dashboard/)
-
 ---
 
 ## 📸 Screenshots
@@ -117,27 +115,26 @@
 ---
 
 ## 📂 File Structure
+
+```plaintext
 BizDash-Responsive-Dashboard/
 │
-├── index.html # Main HTML structure
-├── style.css # All styling (responsive + animations)
-├── main.js # All JavaScript functionality
+├── index.html          # Main HTML structure
+├── style.css           # All styling (responsive + animations)
+├── main.js             # All JavaScript functionality
 │
-├── screenshots/ # Project screenshots folder
-│ ├── analytics.png
-│ ├── contact.png
-│ ├── customers.png
-│ ├── dashboard.png
-│ ├── desktop-view.png
-│ ├── mobile-view.png
-│ ├── projects.png
-│ └── tablet-view.png
+├── screenshots/        # Project screenshots folder
+│   ├── analytics.png
+│   ├── contact.png
+│   ├── customers.png
+│   ├── dashboard.png
+│   ├── desktop-view.png
+│   ├── mobile-view.png
+│   ├── projects.png
+│   └── tablet-view.png
 │
-├── assets/ # (Optional) Additional images/icons
-│
-└── README.md # Project documentation
-
-text
+└── README.md           # Project documentation
+```
 
 ---
 
@@ -145,68 +142,69 @@ text
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/BizDash-Responsive-Dashboard.git
-2. Navigate to project folder
-bash
-cd BizDash-Responsive-Dashboard
-3. Open with Live Server
-bash
+git clone https://github.com/hasnaainali/decodelabs_tasks/tree/main/business-dashboard.git
+```
+
+### 2. Navigate to project folder
+```bash
+cd business-dashboard
+```
+
+### 3. Open with Live Server
+```bash
 # Using VS Code Live Server extension
 # OR simply open index.html in your browser
-4. No build steps required! Works out of the box.
-🎯 How to Use
-Dashboard Page
-View key business metrics at a glance
+```
 
-Click "Refresh Data" to update chart with new values
 
-Click "Add Activity" to simulate new system activities
+## 🎯 How to Use
 
-Analytics Page
-Navigate via sidebar to view analytics
+### Dashboard Page
+- View key business metrics at a glance
+- Click "Refresh Data" to update chart with new values
+- Click "Add Activity" to simulate new system activities
 
-Review KPI cards for business insights
+### Analytics Page
+- Navigate via sidebar to view analytics
+- Review KPI cards for business insights
+- Check monthly revenue trends and top products
 
-Check monthly revenue trends and top products
+### Customers Page
+- Browse existing customer directory
+- Click "Add New Customer" to open modal form
+- Fill customer details and click "Done" to add
+- Customer count updates automatically
 
-Customers Page
-Browse existing customer directory
+### Projects Page
+- View active projects with progress bars
+- Click "New Project" to add a project dynamically
+- Track project deadlines and completion percentages
 
-Click "Add New Customer" to open modal form
+### Contact Page
+- Fill all required fields
+- Submit form for validation
+- Receive success/error feedback
 
-Fill customer details and click "Done" to add
+---
 
-Customer count updates automatically
+## 🎨 Color Scheme
 
-Projects Page
-View active projects with progress bars
+| Color Name | Hex Code | Usage |
+|------------|----------|-------|
+| Primary Teal | #4f9da6 | Icons, active states, gradients |
+| Dark Teal | #2c6e76 | Buttons, hover states, dark gradients |
+| Navy Blue | #1a1f2e | Sidebar background, headings |
+| Dark Navy | #0f121c | Sidebar gradient end |
+| Light Gray | #f5f7fa | Body background start |
+| Darker Gray | #e9edf2 | Body background end |
+| White | #ffffff | Cards, forms, modals |
+| Success Green | #2e7d32 | Positive trends, active status |
+| Error Red | #c62828 | Negative trends, inactive status |
+| Medium Gray | #666666 | Secondary text |
+| Light Border | #e0e4e8 | Input borders, dividers |
 
-Click "New Project" to add a project dynamically
-
-Track project deadlines and completion percentages
-
-Contact Page
-Fill all required fields
-
-Submit form for validation
-
-Receive success/error feedback
-
-🎨 Color Scheme
-Color Name	Hex Code	Usage
-Primary Teal	#4f9da6	Icons, active states, gradients
-Dark Teal	#2c6e76	Buttons, hover states, dark gradients
-Navy Blue	#1a1f2e	Sidebar background, headings
-Dark Navy	#0f121c	Sidebar gradient end
-Light Gray	#f5f7fa	Body background start
-Darker Gray	#e9edf2	Body background end
-White	#ffffff	Cards, forms, modals
-Success Green	#2e7d32	Positive trends, active status
-Error Red	#c62828	Negative trends, inactive status
-Medium Gray	#666666	Secondary text
-Light Border	#e0e4e8	Input borders, dividers
-Gradient Combinations Used
-css
+### Gradient Combinations Used
+```css
 /* Sidebar Navigation */
 linear-gradient(180deg, #1a1f2e 0%, #0f121c 100%)
 
@@ -218,17 +216,12 @@ linear-gradient(135deg, #4f9da6, #2c6e76)
 
 /* Progress Bars */
 linear-gradient(90deg, #4f9da6, #7fc1c9)
-🔧 Browser Support
-Browser	Version	Status
-Chrome	60+	✅ Fully Supported
-Firefox	60+	✅ Fully Supported
-Safari	12+	✅ Fully Supported
-Edge	79+	✅ Fully Supported
-Opera	50+	✅ Fully Supported
-Mobile Browsers	Latest	✅ Fully Supported
-👨‍💻 Author
-Hasnain A.
+```
 
-GitHub: @hasnaainali
+---
 
-Project Link: https://github.com/your-username/BizDash-Responsive-Dashboard
+## 👨‍💻 Author
+
+**Hasnain Ali**
+
+---

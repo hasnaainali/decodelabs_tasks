@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>BizDash | Responsive Business Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <nav class="sidebar" id="sidebar">
+        <div class="logo-area">
+            <i class="fas fa-chart-line"></i>
+            <h2>Biz<span>Dash</span></h2>
+        </div>
+        <ul class="nav-links">
+            <li data-page="dashboard" class="active"><a href="#"><i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a></li>
+            <li data-page="analytics"><a href="#"><i class="fas fa-chart-bar"></i> <span>Analytics</span></a></li>
+            <li data-page="customers"><a href="#"><i class="fas fa-users"></i> <span>Customers</span></a></li>
+            <li data-page="projects"><a href="#"><i class="fas fa-folder"></i> <span>Projects</span></a></li>
+            <li data-page="contact"><a href="#"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+        <div class="user-info">
+            <i class="fas fa-user-circle"></i>
+            <span>Hasnain A. <br><small>Admin</small></span>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <h1 id="pageTitle">Dashboard Overview</h1>
+            <div class="date-badge" id="currentDate"></div>
+        </header>
+
+        <div id="dashboard-page" class="page-content active-page">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="card-icon"><i class="fas fa-dollar-sign"></i></div>
+                    <div class="card-details">
+                        <h3>$124,590</h3>
+                        <p>Total Revenue</p>
+                        <span class="trend up"><i class="fas fa-arrow-up"></i> +12.5%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="card-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <div class="card-details">
+                        <h3>2,845</h3>
+                        <p>Orders</p>
+                        <span class="trend up"><i class="fas fa-arrow-up"></i> +8.2%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="card-icon"><i class="fas fa-users"></i></div>
+                    <div class="card-details">
+                        <h3>1.2k</h3>
+                        <p>New Users</p>
+                        <span class="trend down"><i class="fas fa-arrow-down"></i> -3.1%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="card-details">
+                        <h3>89.4%</h3>
+                        <p>Conversion Rate</p>
+                        <span class="trend up"><i class="fas fa-arrow-up"></i> +5.3%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="two-columns">
+                <div class="card chart-card">
+                    <h3><i class="fas fa-chart-simple"></i> Weekly Performance</h3>
+                    <div class="chart-bars">
+                        <div class="bar-item"><span>Mon</span>
+                            <div class="bar" style="height: 45px;"></div><span>$4.2k</span>
+                        </div>
+                        <div class="bar-item"><span>Tue</span>
+                            <div class="bar" style="height: 68px;"></div><span>$6.8k</span>
+                        </div>
+                        <div class="bar-item"><span>Wed</span>
+                            <div class="bar" style="height: 52px;"></div><span>$5.2k</span>
+                        </div>
+                        <div class="bar-item"><span>Thu</span>
+                            <div class="bar" style="height: 79px;"></div><span>$7.9k</span>
+                        </div>
+                        <div class="bar-item"><span>Fri</span>
+                            <div class="bar" style="height: 92px;"></div><span>$9.2k</span>
+                        </div>
+                        <div class="bar-item"><span>Sat</span>
+                            <div class="bar" style="height: 64px;"></div><span>$6.4k</span>
+                        </div>
+                        <div class="bar-item"><span>Sun</span>
+                            <div class="bar" style="height: 38px;"></div><span>$3.8k</span>
+                        </div>
+                    </div>
+                    <button class="refresh-btn" id="refreshChartBtn"><i class="fas fa-sync-alt"></i> Refresh
+                        Data</button>
+                </div>
+                <div class="card activity-card">
+                    <h3><i class="fas fa-clock"></i> Recent Activity</h3>
+                    <div class="activity-list-container">
+                        <ul class="activity-list" id="activityList">
+                            <li><i class="fas fa-check-circle"></i> New order #2341 from Acme Corp</li>
+                            <li><i class="fas fa-user-plus"></i> Sarah Johnson signed up</li>
+                            <li><i class="fas fa-chart-line"></i> Weekly report generated</li>
+                            <li><i class="fas fa-credit-card"></i> Payment received: $4,250</li>
+                        </ul>
+                    </div>
+                    <button class="refresh-btn" id="addActivityBtn"><i class="fas fa-plus-circle"></i> Add
+                        Activity</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="analytics-page" class="page-content">
+            <div class="card full-width-card">
+                <h3><i class="fas fa-chart-line"></i> Business Analytics Overview</h3>
+                <div class="analytics-stats">
+                    <div class="analytics-item"><i class="fas fa-eye"></i>
+                        <div>
+                            <h4>45.2K</h4>
+                            <p>Total Views</p>
+                        </div>
+                    </div>
+                    <div class="analytics-item"><i class="fas fa-clock"></i>
+                        <div>
+                            <h4>4.2 min</h4>
+                            <p>Avg. Session</p>
+                        </div>
+                    </div>
+                    <div class="analytics-item"><i class="fas fa-bounce"></i>
+                        <div>
+                            <h4>32.5%</h4>
+                            <p>Bounce Rate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h4>Monthly Revenue Trend</h4>
+                    <div class="trend-bars">
+                        <div><span>Jan</span>
+                            <div class="trend-bar" style="height: 40px;"></div><span>$12k</span>
+                        </div>
+                        <div><span>Feb</span>
+                            <div class="trend-bar" style="height: 55px;"></div><span>$16k</span>
+                        </div>
+                        <div><span>Mar</span>
+                            <div class="trend-bar" style="height: 62px;"></div><span>$19k</span>
+                        </div>
+                        <div><span>Apr</span>
+                            <div class="trend-bar" style="height: 48px;"></div><span>$14k</span>
+                        </div>
+                        <div><span>May</span>
+                            <div class="trend-bar" style="height: 78px;"></div><span>$24k</span>
+                        </div>
+                        <div><span>Jun</span>
+                            <div class="trend-bar" style="height: 92px;"></div><span>$28k</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-products">
+                    <h4>Top Performing Products</h4>
+                    <ul>
+                        <li><span>Pro Dashboard License</span><span class="sales">$45,230</span></li>
+                        <li><span>Analytics Pro Package</span><span class="sales">$32,890</span></li>
+                        <li><span>Business Template Kit</span><span class="sales">$28,450</span></li>
+                        <li><span>Cloud Storage Add-on</span><span class="sales">$19,200</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="customers-page" class="page-content">
+            <div class="card full-width-card">
+                <div class="customer-header">
+                    <h3><i class="fas fa-users"></i> Customer Directory</h3>
+                </div>
+                <div class="customer-stats-wrapper">
+                    <div class="customer-stats-summary">
+                        <div class="customer-stat"><span>Total Customers:</span> <strong
+                                id="totalCustomers">1,284</strong></div>
+                        <div class="customer-stat"><span>Active:</span> <strong id="activeCustomers">982</strong></div>
+                        <div class="customer-stat"><span>New This Month:</span> <strong>124</strong></div>
+                    </div>
+                    <button class="add-customer-btn" id="addCustomerBtn"><i class="fas fa-user-plus"></i> Add New
+                        Customer</button>
+                </div>
+                <div class="customer-list" id="customerList"></div>
+            </div>
+        </div>
+
+        <div id="projects-page" class="page-content">
+            <div class="card full-width-card">
+                <div class="projects-header">
+                    <h3><i class="fas fa-folder-open"></i> Active Projects</h3>
+                    <button class="add-project-btn" id="addProjectBtn"><i class="fas fa-plus-circle"></i> New
+                        Project</button>
+                </div>
+                <div class="projects-grid" id="projectsList"></div>
+            </div>
+        </div>
+
+        <div id="contact-page" class="page-content">
+            <div class="contact-section">
+                <h2><i class="fas fa-envelope-open-text"></i> Contact Our Team</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="input-group"><i class="fas fa-user"></i><input type="text" id="firstName"
+                                placeholder="First Name" required></div>
+                        <div class="input-group"><i class="fas fa-user"></i><input type="text" id="lastName"
+                                placeholder="Last Name" required></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group"><i class="fas fa-phone"></i><input type="tel" id="phone"
+                                placeholder="Phone Number" required></div>
+                        <div class="input-group"><i class="fas fa-envelope"></i><input type="email" id="email"
+                                placeholder="Email Address" required></div>
+                    </div>
+                    <div class="input-group full-width"><i class="fas fa-comment"></i><textarea id="message" rows="4"
+                            placeholder="Your message..." required></textarea></div>
+                    <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    <div id="formFeedback" class="form-feedback"></div>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 BizDash — Responsive Business Dashboard. All rights reserved. | Admin: Hasnain</p>
+        </footer>
+    </main>
+
+    <div id="customerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-user-plus"></i> Add New Customer</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <form id="customerForm">
+                <div class="input-group"><i class="fas fa-user"></i><input type="text" id="custName"
+                        placeholder="Full Name" required></div>
+                <div class="input-group"><i class="fas fa-envelope"></i><input type="email" id="custEmail"
+                        placeholder="Email Address" required></div>
+                <div class="input-group"><i class="fas fa-tag"></i><select id="custPlan" class="modal-select">
+                        <option value="Basic Plan">Basic Plan</option>
+                        <option value="Pro Plan">Pro Plan</option>
+                        <option value="Enterprise Plan">Enterprise Plan</option>
+                    </select></div>
+                <div class="input-group"><i class="fas fa-calendar"></i><input type="date" id="custDate" required></div>
+                <div class="input-group"><i class="fas fa-toggle-on"></i><select id="custStatus" class="modal-select">
+                        <option value="active">Active</option>
+                        <option value="inactive">Inactive</option>
+                    </select></div>
+                <button type="submit" class="submit-btn"> Done - Add Customer</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,6 +1,5 @@
-Here is the professionally updated `README.md` for **TaskFlow Dashboard**, following the exact pattern of your BizDash sample with all proper sections and screenshot integration.
-```md
-# ✅ TaskFlow Dashboard | Task Management System
+
+# TaskFlow Dashboard | Task Management System
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?logo=node.js&logoColor=white)
@@ -21,19 +20,19 @@ Here is the professionally updated `README.md` for **TaskFlow Dashboard**, follo
 
 | Dashboard | Analytics | Settings |
 |-----------|-----------|----------|
-| ![Dashboard](screenshots/Dashboard.png) | ![Analytics](screenshots/Analytics.png) | ![Settings](screenshots/Settings.png) |
+| ![Dashboard](Screenshot/Dashboard.png) | ![Analytics](Screenshot/Analytics.png) | ![Settings](Screenshot/Settings.png) |
 
 ### 📝 Task Management
 
-| Tasks Page | Add Task | Edit Task | Delete Task |
+| Tasks Page |  Task Database | Edit Task | Delete Task |
 |------------|----------|-----------|-------------|
-| ![Tasks](screenshots/Tasks.png) | ![Task Database](screenshots/Task%20Database.png) | ![Edit Task](screenshots/Edit%20Task.png) | ![Delete Task](screenshots/Delete%20Task.png) |
+| ![Tasks](Screenshot/Tasks.png) | ![Task Database](Screenshot/Task%20Database.png) | ![Edit Task](Screenshot/Edit%20Task.png) | ![Delete Task](Screenshot/Delete%20Task.png) |
 
 ### 📁 Project Management
 
 | Projects Page | Project Database |
 |---------------|------------------|
-| ![Projects](screenshots/Projects.png) | ![Project Database](screenshots/Project%20Database.png) |
+| ![Projects](Screenshot/Projects.png) | ![Project Database](Screenshot/Project%20Database.png) |
 
 ---
 
@@ -41,18 +40,18 @@ Here is the professionally updated `README.md` for **TaskFlow Dashboard**, follo
 
 | Feature | Description |
 |---------|-------------|
-| ✅ **Create Tasks** | Add new tasks with title, description, priority, due date |
-| 📋 **Read Tasks** | View all tasks in an organized dashboard |
-| ✏️ **Update Tasks** | Edit task details and status |
-| 🗑️ **Delete Tasks** | Remove tasks with confirmation |
-| 📁 **Project Management** | Create and manage multiple projects |
-| 📊 **Analytics Dashboard** | Visual insights and task statistics |
-| 🎯 **Priority Levels** | Low, Medium, High priority tagging |
-| 📊 **Status Tracking** | Pending, In-Progress, Completed |
-| 🔍 **Search & Filter** | Filter tasks by status and priority |
-| ⚙️ **Settings Page** | Configure application preferences |
-| 📱 **Responsive Design** | Works on all screen sizes |
-| 💾 **MongoDB Database** | Persistent data storage |
+|  **Create Tasks** | Add new tasks with title, description, priority, due date |
+|  **Read Tasks** | View all tasks in an organized dashboard |
+|  **Update Tasks** | Edit task details and status |
+|  **Delete Tasks** | Remove tasks with confirmation |
+|  **Project Management** | Create and manage multiple projects |
+|  **Analytics Dashboard** | Visual insights and task statistics |
+|  **Priority Levels** | Low, Medium, High priority tagging |
+|  **Status Tracking** | Pending, In-Progress, Completed |
+|  **Search & Filter** | Filter tasks by status and priority |
+|  **Settings Page** | Configure application preferences |
+|  **Responsive Design** | Works on all screen sizes |
+|  **MongoDB Database** | Persistent data storage |
 
 ---
 
@@ -181,7 +180,7 @@ npm start
 
 ### Step 6: Open in Browser
 ```
-http://localhost:5000
+http://localhost:3000/
 ```
 
 ---
@@ -234,7 +233,7 @@ http://localhost:5000
 
 ---
 
-## 🗄️ Database Schema
+##  Database Schema
 
 ### Task Model
 ```javascript
@@ -262,7 +261,7 @@ http://localhost:5000
 
 ---
 
-## 🎨 Color Scheme
+##  Color Scheme
 
 | Color Name | Hex Code | Usage |
 |------------|----------|-------|
@@ -277,7 +276,7 @@ http://localhost:5000
 
 ---
 
-## 🔧 Available Scripts
+##  Available Scripts
 
 | Command | Description |
 |---------|-------------|
@@ -301,13 +300,13 @@ http://localhost:5000
 
 ---
 
-## 📄 License
+##  License
 
 MIT License - Free for personal and commercial use
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - DecodLabs for the internship opportunity
 - MongoDB for the database
@@ -315,21 +314,21 @@ MIT License - Free for personal and commercial use
 
 ---
 
-## 📊 Project Status
+##  Project Status
 
 | Feature | Status |
 |---------|--------|
-| Task CRUD Operations | ✅ Complete |
-| Project Management | ✅ Complete |
-| Database Integration | ✅ Complete |
-| Responsive Design | ✅ Complete |
-| Search & Filter | ✅ Complete |
-| Priority Levels | ✅ Complete |
-| Due Date Tracking | ✅ Complete |
-| Analytics Dashboard | ✅ Complete |
-| Settings Page | ✅ Complete |
+| Task CRUD Operations |  Complete |
+| Project Management |  Complete |
+| Database Integration |  Complete |
+| Responsive Design |  Complete |
+| Search & Filter |  Complete |
+| Priority Levels |  Complete |
+| Due Date Tracking |  Complete |
+| Analytics Dashboard |  Complete |
+| Settings Page |  Complete |
 
-**Overall Status:** ✅ Production Ready
+**Overall Status:**  Production Ready
 
 ---
 
@@ -342,4 +341,3 @@ MIT License - Free for personal and commercial use
 ⭐ If you found this project helpful, please give it a star on GitHub! ⭐
 
 </div>
-```
